@@ -28,7 +28,7 @@ app = Flask(__name__,template_folder='.')
 # In[5]:
 
 
-model=pickle.load(open('model_svm','rb'))
+svm_model=pickle.load(open('model_svm','rb'))
 
 
 # In[6]:
@@ -61,16 +61,13 @@ def predict():
         final.append(float(request.form['benzene']))
         final.append(float(request.form['toluene']))
         final.append(float(request.form['xylene']))
+        req_model=str(request.form['model'])
         
-        
-        final=np.array(final)
-        
-        #print(features)
-        #print(final)
-        
-        arr=final.reshape(1, -1)
+        if req_model == "Support Vector Regression":
+            final=np.array(final)
+            arr=final.reshape(1, -1)
+            prediction=svm_model.predict(arr)
 
-        prediction=model.predict(arr)
         
         #output='{0:.{1}f}'.format(prediction[0][1], 2)
     
