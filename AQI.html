@@ -86,60 +86,60 @@
  <body>
  	<div class= "regform"><h1> AQI Predictor</h1></div>
  	<div class="main">
- 		<form action="/predict" method="POST" class="col s12" >
+ 		<form action="/" method="POST" class="col s12" >
  			<div id="name">
  				<h2 class="name">PM2.5</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="pm2"><br>
  			<div id="name">
  				<h2 class="name">PM10</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="pm10"><br>
  			<div id="name">
  				<h2 class="name">NO</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="no"><br>
  			<div id="name">
  				<h2 class="name">NO2</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="no2"><br>
  			<div id="name">
  				<h2 class="name">NOx</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="nox"><br>
  			<div id="name">
  				<h2 class="name">NH3</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="nh3"><br>
  			<div id="name">
  				<h2 class="name">CO</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="co"><br>
  			<div id="name">
  				<h2 class="name">SO2</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="so2"><br>
  			<div id="name">
  				<h2 class="name">O3</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="o3"><br>
  			<div id="name">
  				<h2 class="name">Benzene</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="benzene"><br>
  			<div id="name">
  				<h2 class="name">Toluene</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="toluene"><br>
  			<div id="name">
  				<h2 class="name">Xylene</h2>
- 			 	<input class="amount" type="text" name="amount"><br>
+ 			 	<input class="amount" type="text" name="xylene"><br>
  			<h2>SELECT MODEL</h2>
  			<select class="option" name="model">
  			<option disabled="disabled" selected="selected">--Choose option</option>
- 			<option> linear regression</option>
- 			<option> support vector regression</option>
- 			<option> Multi-layer Perceptron</option>
+ 			<option> Linear Regression</option>
+ 			<option> Support Vector Regression</option>
+ 			<option> Multi-Layer Perceptron</option>
  				
  			</select>
  			<button type="submit">Predict</button>
- 			<p class ="result">abcd</p>
+ 			<p class ="result"></p>
 
 
 
 
  		</form>
  	</div>
- 	<br><h4 align="center"<b></b>{{pred}}</b>
+ 	<br><h4 align="center"><b></b>{{pred}}</b>
  	</h4>
  	<br>
  </body>
