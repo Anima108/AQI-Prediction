@@ -8,7 +8,7 @@
  			padding:0; 
  		}
  		body{
- 			 background-image: url(img/Delhi-air-pollution.jpg);
+ 			 background-color: : rgb(198, 83, 83);
  			 background-position: center;
  			 background-size: cover;
  			 font-family: sans-serif; 
@@ -58,7 +58,7 @@
  			border-radius: 6px;
  			padding: 0 22px;
  			font-size: 16px;
- 			color: #555;
+ 			color: black;
  			outline:none;
  			overflow: hidden;
  		}
@@ -83,7 +83,9 @@
  		}
  	</style>
  </head> 
- <body>
+ <body style="background-image: url('https://m.economictimes.com/thumb/msid-71786277,width-1200,height-900,resizemode-4,imgsize-528641/post-diwali-pollution-in-delhi-likely-to-be-lower-than-last-3-years-safar.jpg'); background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;">
  	<div class= "regform"><h1> AQI Predictor</h1></div>
  	<div class="main">
  		<form action="/" method="POST" class="col s12" >
@@ -123,7 +125,7 @@
  			<div id="name">
  				<h2 class="name">Xylene</h2>
  			 	<input class="amount" type="text" name="xylene"><br>
- 			<h2>SELECT MODEL</h2>
+ 			<h2 class="name">SELECT MODEL</h2>
  			<select class="option" name="model">
  			<option disabled="disabled" selected="selected">--Choose option</option>
  			<option> Linear Regression</option>
@@ -139,8 +141,8 @@
 
  		</form>
  	</div>
- 	<br><h4 align="center"><b></b>{{pred}}</b>
- 	</h4>
+ 	<br><h1 style="color: white;"align="center"><b></b>{{pred}}</b>
+ 	</h1>
  	<br>
  </body>
 </html> 

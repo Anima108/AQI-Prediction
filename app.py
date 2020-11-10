@@ -62,6 +62,7 @@ def predict():
         final.append(float(request.form['toluene']))
         final.append(float(request.form['xylene']))
         
+        
         final=np.array(final)
         
         #print(features)
