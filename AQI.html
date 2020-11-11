@@ -8,15 +8,16 @@
  			padding:0; 
  		}
  		a:link, a:visited {
-         	background-color: #f44336;
+         	background-color: #A9A9A9;
          	color: white;
-         	padding: 15px 25px;
+         	padding: 10px 15px;
+         	margin:auto;
          	text-align: center;
          	text-decoration: none;
          	display: inline-block;
         }
-
         a:hover, a:active {
+        	margin:auto;
           	background-color: powderblue;
         }
  		.regform{
@@ -88,10 +89,11 @@
  		}
  	</style>
  </head> 
- <body style="background-image: url('https://m.economictimes.com/thumb/msid-71786277,width-1200,height-900,resizemode-4,imgsize-528641/post-diwali-pollution-in-delhi-likely-to-be-lower-than-last-3-years-safar.jpg'); background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;">
+ <body style="background-image: url('https://m.economictimes.com/thumb/msid-71786277,width-1200,height-900,resizemode-4,imgsize-528641/post-diwali-pollution-in-delhi-likely-to-be-lower-than-last-3-years-safar.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
  	<div class= "regform"><h1> AQI Predictor</h1></div>
+ 	<br><h3 style="color: black;"align="center"><b></b>{{pred}}</b>
+ 	</h3>
+ 	<br>
  	<div class="main">
  		<form action="/" method="POST" class="col s12" >
  			<div id="name">
@@ -146,10 +148,9 @@
 
  		</form>
  	</div>
- 	<br><h1 style="color: white;"align="center"><b></b>{{pred}}</b>
- 	</h1>
- 	<br>
+ 	
  	<p><a href="https://github.com/akankshatanwar1701/AQI-Prediction">Github</a></p>
+
  	<p><b><em style="color: black">Akanksha -- 2K18/IT/014</em></b></p>
  	<p><b><em style="color: black">Anima -- 2K18/IT/021</em></b></p>
  </body>
