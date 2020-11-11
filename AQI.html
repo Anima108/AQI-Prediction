@@ -7,13 +7,19 @@
  			margin:0;
  			padding:0; 
  		}
- 		body{
- 			 background-image: url(img/Delhi-air-pollution.jpg);
- 			 background-position: center;
- 			 background-size: cover;
- 			 font-family: sans-serif; 
- 			 margin-top: 40px;
- 		}
+ 		a:link, a:visited {
+         	background-color: #A9A9A9;
+         	color: white;
+         	padding: 10px 15px;
+         	margin:auto;
+         	text-align: center;
+         	text-decoration: none;
+         	display: inline-block;
+        }
+        a:hover, a:active {
+        	margin:auto;
+          	background-color: powderblue;
+        }
  		.regform{
  			width: 800px;
  			background-color: rgb(0,0,0,0.6);
@@ -58,7 +64,7 @@
  			border-radius: 6px;
  			padding: 0 22px;
  			font-size: 16px;
- 			color: #555;
+ 			color: black;
  			outline:none;
  			overflow: hidden;
  		}
@@ -83,8 +89,11 @@
  		}
  	</style>
  </head> 
- <body>
+ <body style="background-image: url('https://m.economictimes.com/thumb/msid-71786277,width-1200,height-900,resizemode-4,imgsize-528641/post-diwali-pollution-in-delhi-likely-to-be-lower-than-last-3-years-safar.jpg'); background-repeat: no-repeat; background-attachment: fixed; background-size: cover;">
  	<div class= "regform"><h1> AQI Predictor</h1></div>
+ 	<br><h3 style="color: black;"align="center"><b></b>{{pred}}</b>
+ 	</h3>
+ 	<br>
  	<div class="main">
  		<form action="/" method="POST" class="col s12" >
  			<div id="name">
@@ -123,14 +132,14 @@
  			<div id="name">
  				<h2 class="name">Xylene</h2>
  			 	<input class="amount" type="text" name="xylene"><br>
- 			<h2>SELECT MODEL</h2>
+ 			<h2 class="name">SELECT MODEL</h2>
  			<select class="option" name="model">
  			<option disabled="disabled" selected="selected">--Choose option</option>
  			<option> Linear Regression</option>
  			<option> Support Vector Regression</option>
  			<option> Multi-Layer Perceptron</option>
  				
- 			</select>
+ 			</select><br>
  			<button type="submit">Predict</button>
  			<p class ="result"></p>
 
@@ -139,8 +148,10 @@
 
  		</form>
  	</div>
- 	<br><h4 align="center"><b></b>{{pred}}</b>
- 	</h4>
- 	<br>
+ 	
+ 	<p><a href="https://github.com/akankshatanwar1701/AQI-Prediction">Github</a></p>
+
+ 	<p><b><em style="color: black">Akanksha -- 2K18/IT/014</em></b></p>
+ 	<p><b><em style="color: black">Anima -- 2K18/IT/021</em></b></p>
  </body>
 </html> 
